@@ -9,12 +9,14 @@ class FirstLogin(Container):
         self.page = first_page
         self.userFullName = TextField(label="Full Name: ", hint_text="Please enter your Full Name")
         self.email = TextField(label="Email: ", hint_text="Please enter your Email")
-        self.currency = Dropdown(width=120,
-                         options=[
-                             dropdown.Option("Euro - €"),
-                             dropdown.Option("Dollar - $"),
-                             dropdown.Option("Hryvna - ₴")
-                         ])
+        self.currency = Dropdown(
+            hint_text="Please pick your currency:",
+            options=[
+             dropdown.Option("Euro - €"),
+             dropdown.Option("Dollar - $"),
+             dropdown.Option("Hryvna - ₴")
+            ]
+        )
 
         self.error = SnackBar(
             Text(color=colors.WHITE),
@@ -29,10 +31,8 @@ class FirstLogin(Container):
             Divider(height=25),
             self.userFullName,
             self.email,
-            Row([
-                Text("Please pick your currency:", size=18),
-                self.currency
-            ], alignment=MainAxisAlignment.SPACE_BETWEEN),
+            self.currency,
+            self.error,
             Divider(height=25),
             Container(
                 padding=padding.only(left=100, right=100, top=25),
