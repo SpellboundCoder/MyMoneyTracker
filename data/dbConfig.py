@@ -120,7 +120,7 @@ def get_all_expenses(user_id):
 
 def add_user(user: User):
     with conn:
-        c.execute("INSERT INTO users(username,email,password) VALUES(:username, :email, :currency)",
+        c.execute("INSERT INTO users(username,email,currency) VALUES(:username, :email, :currency)",
                   {
                       "username": user.username,
                       "email": user.email,
@@ -138,7 +138,7 @@ def update_currency(_id, currency):
 def add_income(income: Income):
     with conn:
         c.execute("PRAGMA foreign_keys = ON")
-        c.execute("""INSERT INTO websites(title,amount,tag,username,description, date, user_id)
+        c.execute("""INSERT INTO incomes(title,amount,tag,username,description, date, user_id)
                   VALUES (:title, :amount, :tag, :username, :description, :date, :user_id)""",
                   {
                       "title": income.title,
@@ -151,19 +151,19 @@ def add_income(income: Income):
                   })
 
 
-def add_expense(income: Income):
+def add_expense(expense: Expense):
     with conn:
         c.execute("PRAGMA foreign_keys = ON")
-        c.execute("""INSERT INTO websites(title,amount,tag,username,description, date, user_id)
+        c.execute("""INSERT INTO expenses(title,amount,tag,username,description, date, user_id)
                   VALUES (:title, :amount, :tag, :username, :description, :date, :user_id)""",
                   {
-                      "title": income.title,
-                      "amount": income.amount,
-                      "tag": income.tag,
-                      "username": income.username,
-                      "description": income.description,
-                      "date": income.date,
-                      "user_id": income.user_id
+                      "title": expense.title,
+                      "amount": expense.amount,
+                      "tag": expense.tag,
+                      "username": expense.username,
+                      "description": expense.description,
+                      "date": expense.date,
+                      "user_id": expense.user_id
                   })
 
 

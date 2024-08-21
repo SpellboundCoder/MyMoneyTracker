@@ -71,7 +71,7 @@ class FirstLogin(Container):
         user = User(
             username=self.userFullName.value,
             email=self.email.value,
-            currency=self.currency.value
+            currency=self.currency.value.replace(" ", "").split("-")[1]
         )
         add_user(user)
         self.page.client_storage.set("first_login", value=email)

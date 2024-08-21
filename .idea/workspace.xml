@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0489713f-d029-4977-99cc-ea884a3d4d4b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/first_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/first_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dbConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dbConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/moneytrack.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/moneytrack.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/CancelBoss/FletProjects/MyMoneyTracker/data"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/CancelBoss/FletProjects/MyMoneyTracker/data&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\CancelBoss\FletProjects\MyMoneyTracker\data" />
